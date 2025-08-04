@@ -27,7 +27,8 @@ set -g fish_color_selection white --bold '--background=brblack'
 set -g fish_color_user brgreen
 set -g fish_color_valid_path --underline
 
-set -x DOTNET_ROOT /usr/local/share/dotnet
-set -x PATH $DOTNET_ROOT $PATH
+# Set up DOTNET_ROOT for Apple M1
+#set -x DOTNET_ROOT /usr/local/share/dotnet
+#set -x PATH $DOTNET_ROOT $PATH
 
 starship init fish | source
