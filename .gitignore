@@ -1,7 +1,6 @@
 # Ignore generated/system files
 .fish_history
 fish_variables
-fish_plugins
 
 # Ignore plugin manager folders (if using fisher or oh-my-fish)
 omf/

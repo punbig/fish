@@ -1,0 +1,10 @@
+jorgebucaran/fisher
+nvm
+jorgebucaran/nvm.fish
+fisher
+~/install
+berk-karaal/loadenv.fish
+~/.config/fish/fish_plugins
+brigand/fast-nvm-fish
+jethrokuan/fzf
+decors/fish-colored-man
