@@ -1,2 +1,17 @@
-  !alias.fish
-  !config.fish
+# Ignore generated/system files
+.fish_history
+fish_variables
+fish_plugins
+
+# Ignore plugin manager folders (if using fisher or oh-my-fish)
+omf/
+# I don't have any custom functions so I'm ignoring everything
+# Will/Could change in the future
+functions/
+
+# Optional: ignore completions that are auto-generated
+completions/
+
+# Optional: ignore conf.d if used for plugins or transient stuff
+conf.d/
+.DS_Store
