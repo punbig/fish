@@ -2,6 +2,13 @@ source ~/.config/fish/alias.fish
 
 status --is-interactive; and source (jump shell fish --bind=z | psub)
 
+set -gx PYENV_ROOT "$HOME/.pyenv"
+if test -d "$PYENV_ROOT/bin"
+    set -gx PATH "$PYENV_ROOT/bin" $PATH
+end
+status --is-interactive; and pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
+
 #/usr/bin/ssh-add -A ^/dev/null
 
 # Fish syntax highlighting
